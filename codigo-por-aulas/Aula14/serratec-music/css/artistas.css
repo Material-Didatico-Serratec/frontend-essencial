@@ -1,0 +1,8 @@
+table.table{
+    box-shadow: 0 0 10px 0 rgb(50 50 50 / 82%);
+  
+}
+
+table>thead>tr:first-child{
+    background-color: #eee;
+}

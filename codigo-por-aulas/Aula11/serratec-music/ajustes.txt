@@ -1,0 +1,2 @@
+1) Corrigir o problema de cors na api para permitir atualizar o artista.
+2) Corrigir o bug de não conseguir alterar o tipo do artista no modal.

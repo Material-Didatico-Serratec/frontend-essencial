@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor-primaria: #0F74BC;
+    --cor-secundaria: #0c609C;
+    --cor-terciaria: #0A5388;
+    --cor-background: #FFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Sobrescrevendo Bootstrap */
+.form-control:focus {
+    color: #495057;
+    background-color: var(--cor-background);
+    border-color: var(--cor-primaria);
+    outline: 0;
+    box-shadow: 0 0 0 0.04rem var(--cor-primaria);
+}
+
+.btn-primary, .btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+    color: var(--cor-background);
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    outline: 0;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.1rem var(--cor-terciaria);
+    outline: 0;
+}
+.btn-primary:hover {
+    color: var(--cor-background);
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+}
+
+nav.navbar.navbar-dark{
+    background-color: var(--cor-primaria) !important;
+}
+
+.modal-header {
+    background-color: var(--cor-primaria);
+    color: #fff;
+}
+
+.btn {
+    min-width: 90px;
+}
