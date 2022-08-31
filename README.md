@@ -34,7 +34,7 @@ Neste material criamos um sistema por nome de Serratec Music, onde seu objetivo 
 
 Este sistema não tem tudo que a API fornece, mas ele contempla todo o conteúdo da disciplina e muito mais.
 
-Todos os códigos criados estão separados por aulas dentro da pasta `codigo-po-aulas`.
+Todos os códigos criados estão separados por aulas dentro da pasta `codigo-por-aulas`.
 
 # Tecnologias
 Neste projeto usamos as seguintes tecnologias:
