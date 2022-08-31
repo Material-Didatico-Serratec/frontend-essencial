@@ -50,3 +50,10 @@ Neste projeto usamos as seguintes tecnologias:
 * https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 * https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data-pt
 
+# Saiba mais sobre o Serratec
+
+* https://serratec.org/
+* https://www.instagram.com/serratecoficial/
+* https://pt-br.facebook.com/serratecoficial/
+* https://www.youtube.com/c/SerratecOficial
+* https://www.linkedin.com/company/serratecoficial/
