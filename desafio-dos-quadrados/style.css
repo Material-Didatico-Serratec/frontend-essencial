@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+}
+
+#container {
+    height: 100%;
+    position: relative;
+}
+
+#top-left {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#top-right {
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#bottom-left {
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#bottom-right {
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#center {
+    background-color: orange;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
