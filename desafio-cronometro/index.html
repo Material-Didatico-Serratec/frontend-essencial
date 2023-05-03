@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Cronômetro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="pageTitle">Cronômetro ⏱</h1>
+        <div id="watchContainer">
+            <!-- Horas -->
+            <div class="box" id="decHour">0</div>
+            <div class="box" id="unHour">0</div>
+            <!-- Separador -->
+            <div class="dotsContainer">
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <!-- Minutos -->
+            <div class="box" id="decMinute">0</div>
+            <div class="box" id="unMinute">0</div>
+            <!-- Separador -->
+            <div class="dotsContainer">
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <!-- Segundos -->
+            <div class="box" id="decSecond">0</div>
+            <div class="box" id="unSecond">0</div>
+        </div>
+        <input type="number" id="secondsInput" placeholder="Quantos segundos?">
+        <button id="startBtn" onclick="startCounter()">Iniciar</button>
+    </div>
+</body>
+</html>
