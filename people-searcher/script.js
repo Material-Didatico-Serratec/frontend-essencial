@@ -54,13 +54,15 @@ document.getElementById("sendBtn").addEventListener('click', (e) => {
     searchUser();
 })
 
+document.getElementById("search").addEventListener('input', (e) => {
+    if(e.target.value.length >= 3) {
+        handleSuggestions(e.target.value);
+    } else {
+        closeSuggestions()
+    }
+})
+
 // Para filtrar a cada caracter digitado
-
-// document.getElementById("search").addEventListener('input', (e) => {
-//     e.preventDefault();
-//     searchUser();
-// })
-
 window.onload = () => {
     var htmlString = "";
 
@@ -75,6 +77,27 @@ window.onload = () => {
     })
 
     document.getElementById("peopleContainer").innerHTML = htmlString
+}
+
+const handleSuggestions = (searchValue) => {
+    const filteredCollaborators = collaborators.filter(collaborator => collaborator.name.toLowerCase().includes(searchValue.toLowerCase()));
+    var htmlString = "";
+    filteredCollaborators.forEach(collaborator => {
+        htmlString += `<span class='collaboratorSuggestion' onclick="selectCollaborator('${collaborator.name}')">${collaborator.name}</span>`
+    })
+
+    document.getElementById("suggestions").innerHTML = htmlString;
+    document.getElementById("suggestions").style.display = "flex";
+}
+
+const selectCollaborator = (collaboratorName) => {
+    document.getElementById("search").value = collaboratorName;
+    searchUser();
+    closeSuggestions();
+}
+
+const closeSuggestions = () => {
+    document.getElementById("suggestions").style.display = "none";
 }
 
 const searchUser = () => {

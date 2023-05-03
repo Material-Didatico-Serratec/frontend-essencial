@@ -60,6 +60,7 @@ form {
     font-size: 18px;
     border: 1px solid rgb(186, 186, 186);
     border-right: none;
+    position: relative;
 }
 
 #searchForm button {
@@ -82,6 +83,28 @@ form {
 
 #searchForm button img {
     width: 40px;
+}
+
+#suggestions {
+    height: 100px;
+    width: 351px;
+    background-color: #fff;
+    position: absolute;
+    top: 186px;
+    padding: 20px;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    gap: 5px;
+    border: 1px solid rgb(186, 186, 186);
+    border-top: none;
+}
+
+.collaboratorSuggestion:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* ############# PEOPLE CONTAINER ############# */
