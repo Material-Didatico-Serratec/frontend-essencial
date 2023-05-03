@@ -1,0 +1,140 @@
+/* ############# GLOBAL ############# */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body, html {
+    margin: 0;
+    max-height: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+/* ############# CONTAINER DA PÁGINA ############# */
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    padding: 25px;
+}
+
+/* ############# TÍTULO DA PÁGINA ############# */
+
+#pageTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+}
+
+/* ############# ÁREA DO INPUT ############# */
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+#searchForm input {
+    width: 350px;
+    height: 60px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(186, 186, 186);
+    border-right: none;
+}
+
+#searchForm button {
+    width: 70px;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ab6102;
+    background-color: #FF9000;
+    transition: filter 0.4s;
+}
+
+#searchForm button:hover {
+    filter: brightness(0.9);
+}
+
+
+#searchForm button img {
+    width: 40px;
+}
+
+/* ############# PEOPLE CONTAINER ############# */
+
+#peopleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#peopleContainer .noCollaboratorFound {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ############# PERSON CONTAINER ############# */
+
+.personContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+    padding: 10px 25px;
+    margin-top: 15px;
+
+    white-space: nowrap;
+    min-width: 400px;
+    background-color: #fff;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+}
+
+.personContainer img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+}
+
+.personContainer .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.personContainer .contentContainer .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.personContainer .contentContainer .jobTitle {
+    font-size: 18px;
+}
